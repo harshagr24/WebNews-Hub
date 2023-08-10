@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>Today in tabs</title>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+  </script>
+</head>
+
+
+
+<head>
+    <link rel ="stylesheet" href="main.css">
+</head>
+<h1>Today In Tabs</h1>
+    <h4>-No Nonsense</h5>
+
+  <body id = "member">
+      <p class="member1">About and remarks</p>
+      <div id="body1">
+
+        <a href="index.html" target="_self">
+        <button class="btn1">World News</button> <br><br>
+        </a>
+        <a href="genere2.html" target="_self">
+             <button class="btn1">Political News</button> <br><br>
+         </a>
+         <a href="genere3.html" target="_self">
+             <button class="btn1">Weather Forecast</button> <br><br>
+         </a>
+         <a href="genere4.html" target="_self">
+        <button class="btn1">Entertainment</button> <br><br>
+         </a>
+         <a href="genere5.html" target="_self">
+        <button class="btn1">Sports</button> <br><br>
+        </a>
+        <a href="about.html" target="_self">
+        <button class="btn1">About and remarks</button> <br><br>
+        </a>
+     </div>
+
+    <div id = "div1">
+        <p></p>
+        <script src="jquery.js"></script>
+        <script>
+
+        $(document).ready(function(){
+        $("p").mousemove(function(){
+            $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+        });
+    });
+        </script>
+    </div>
+
+  </body>
+</html>
